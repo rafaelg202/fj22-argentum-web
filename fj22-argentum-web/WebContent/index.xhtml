@@ -8,7 +8,7 @@
 </h:head>
 <h:body>
 <h:form id="listaNegociacao">
-	<p:dataTable var="negociacao" value="#{argentumBean.negociacoes}" 
+	<p:dataTable color="#FFFFFF" var="negociacao" value="#{argentumBean.negociacoes}" 
 				paginator="true" rows="15">
 		<p:column sortBy="#{negociacao.preco}" headerText="Preço">
 			<h:outputText value="#{negociacao.preco}"/>
