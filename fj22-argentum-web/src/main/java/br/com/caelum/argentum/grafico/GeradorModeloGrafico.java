@@ -4,6 +4,7 @@ import org.primefaces.model.chart.ChartModel;
 import org.primefaces.model.chart.LineChartModel;
 import org.primefaces.model.chart.LineChartSeries;
 
+import br.com.caelum.argentum.indicadores.Indicador;
 import br.com.caelum.argentum.indicadores.MediaMovelSimples;
 import br.com.caelum.argentum.modelo.SerieTemporal;
 
@@ -25,8 +26,7 @@ public class GeradorModeloGrafico {
 			this.modeloGrafico = new LineChartModel();
 		}
 		
-		public void plotaMediaMovelSimples() {
-			MediaMovelSimples indicador = new MediaMovelSimples();
+		public void plotaIndicador(Indicador indicador) {
 			LineChartSeries chartSerie = new LineChartSeries("MMS - Fechamento");
 			
 			for(int i = comeco; i <= fim; i++){
